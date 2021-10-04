@@ -1,0 +1,51 @@
+type User @model {
+	id: ID!
+	typeOfUser: String!
+	firstName: String!
+	lastName: String!
+	verifiedAt: String!
+	initialSetupDone: Boolean
+	values: [String]
+	benefits: [String]
+	tech_skills: [String]
+	soft_skills: [String]
+	employment_type: [String]
+	about: String
+	picture: String
+	availability: [String]
+	notification_settings: [String]
+	preferences: [String]
+	response_rate: Float
+	matches: [String]
+	email: String!
+	organization: String
+	position: String
+	company_size: String
+	location: String
+	website: String
+	alumn: [String]
+	life_at: String
+	degree: String
+	major: String
+	located: String
+	grad_year: Int
+	highlights: [String]
+	special: String
+	resume: [String!]
+	bio: String
+	liked: [String]
+	skipped: [String]
+	notSeen: [String]
+	createdAt: AWSDateTime
+	updatedAt: AWSDateTime
+}
+
+type Match @model {
+	id: ID!
+	company: String
+	student: String
+	createdAt: AWSDateTime!
+	status_flag: String!
+	upcoming_meeting: String
+	messages: [String]
+}
